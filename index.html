@@ -6,90 +6,103 @@
 <title>Residencial Los Andes</title>
 
 <style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f4f4f4;
-}
-
-header {
-  background: #000;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-}
-
-nav {
-  background: #111;
-  text-align: center;
-  padding: 10px;
-}
-
-nav a {
-  color: white;
-  margin: 10px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-section {
-  padding: 40px;
-  text-align: center;
-}
-
-.card {
-  background: white;
-  padding: 20px;
-  margin: 10px;
-  border-radius: 10px;
-}
-
-.btn {
-  background: black;
-  color: white;
-  padding: 10px;
-  border: none;
-  cursor: pointer;
-}
+body{margin:0;font-family:Arial;background:#f4f6f9;color:#111}
+header{background:#0a1f44;color:#fff;padding:25px;text-align:center}
+nav{background:#102a5c;padding:12px;text-align:center}
+nav a{color:#fff;margin:10px;text-decoration:none;font-weight:bold}
+.hero{padding:80px 20px;text-align:center;background:linear-gradient(135deg,#0a1f44,#1c3d7a);color:#fff}
+section{padding:50px 20px;text-align:center}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.card{background:#fff;border-radius:12px;padding:20px;box-shadow:0 5px 15px rgba(0,0,0,0.1)}
+.btn{background:#0a1f44;color:#fff;padding:10px 15px;border:none;border-radius:6px;text-decoration:none;display:inline-block;margin-top:10px}
+footer{background:#0a1f44;color:#fff;text-align:center;padding:20px}
+.whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;padding:15px 18px;border-radius:50px;text-decoration:none;font-weight:bold}
 </style>
-
 </head>
 
 <body>
 
 <header>
-  RESIDENCIAL LOS ANDES
+<h1>RESIDENCIAL LOS ANDES</h1>
+<p>Av. Paso de los Andes 514 - Pueblo Libre</p>
 </header>
 
 <nav>
-  <a href="#">Inicio</a>
-  <a href="#">Comunicados</a>
-  <a href="#">Documentos</a>
-  <a href="#">Contacto</a>
+<a href="#">Inicio</a>
+<a href="#comunicados">Comunicados</a>
+<a href="#documentos">Documentos</a>
+<a href="#agenda">Agenda</a>
+<a href="#proyectos">Proyectos</a>
+<a href="#contacto">Contacto</a>
 </nav>
 
-<section>
-  <h2>Bienvenidos</h2>
-  <p>Plataforma oficial para los propietarios</p>
+<section class="hero">
+<h2>Bienvenidos a nuestra comunidad</h2>
+<p>175 propietarios comprometidos con la seguridad y convivencia</p>
 </section>
 
-<section>
-  <div class="card">
-    <h3>Comunicados</h3>
-    <p>Aquí se publicarán avisos importantes</p>
-  </div>
-
-  <div class="card">
-    <h3>Documentos</h3>
-    <p>Reglamento, manual y archivos oficiales</p>
-  </div>
+<section id="comunicados">
+<h2>Comunicados</h2>
+<div class="grid">
+<div class="card">
+<h3>Comunicado General</h3>
+<p>Información importante para todos los propietarios.</p>
+</div>
+</div>
 </section>
 
-<section>
-  <h3>Contacto</h3>
-  <p>Presidente: Enrique Jiménez Alegría</p>
+<section id="documentos">
+<h2>Documentos Oficiales</h2>
+<div class="grid">
+<div class="card">
+<h3>Reglamento Interno</h3>
+<a class="btn" href="#">Descargar</a>
+</div>
+<div class="card">
+<h3>Manual de Convivencia</h3>
+<a class="btn" href="#">Descargar</a>
+</div>
+</div>
 </section>
+
+<section id="agenda">
+<h2>Agenda</h2>
+<div class="grid">
+<div class="card">
+<h3>Actividades Diarias</h3>
+<p>Seguridad, limpieza y mantenimiento</p>
+</div>
+<div class="card">
+<h3>Actividades Semanales</h3>
+<p>Revisión y coordinación de servicios</p>
+</div>
+</div>
+</section>
+
+<section id="proyectos">
+<h2>Proyectos</h2>
+<div class="grid">
+<div class="card">
+<h3>Mejoras de Infraestructura</h3>
+<p>Modernización de áreas comunes</p>
+</div>
+<div class="card">
+<h3>Seguridad Integral</h3>
+<p>Nuevas medidas de control y vigilancia</p>
+</div>
+</div>
+</section>
+
+<section id="contacto">
+<h2>Contacto</h2>
+<p>Presidente: Enrique Jiménez Alegría</p>
+</section>
+
+<footer>
+© 2026 Residencial Los Andes
+</footer>
+
+<a class="whatsapp" href="https://wa.me/51996138991?text=Hola,%20soy%20propietario%20de%20Residencial%20Los%20Andes" target="_blank">WhatsApp</a>
 
 </body>
 </html>
-<!-- actualizacion -->
